@@ -1,55 +1,8 @@
-# CKEditor 4 LTS - Smart WYSIWYG HTML editor [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20CKEditor%204%20on%20GitHub&url=https%3A%2F%2Fgithub.com%2Fckeditor%2Fckeditor4)
-
-[![npm version](https://badge.fury.io/js/ckeditor4.svg)](https://www.npmjs.com/package/ckeditor4)
-[![GitHub tag](https://img.shields.io/github/tag/ckeditor/ckeditor4.svg)](https://github.com/ckeditor/ckeditor4)
-[![Build Status](https://app.travis-ci.com/ckeditor/ckeditor4.svg?branch=master)](https://app.travis-ci.com/ckeditor/ckeditor4)
-
-
-[![Join newsletter](https://img.shields.io/badge/join-newsletter-00cc99.svg)](http://eepurl.com/c3zRPr)
-[![Follow Twitter](https://img.shields.io/badge/follow-twitter-00cc99.svg)](https://twitter.com/ckeditor)
-
-## ⚠️ CKEditor 4: End of Life and Extended Support Model until Dec 2026
-
-CKEditor 4 was launched in 2012 and reached its End of Life (EOL) on June 30, 2023.
-
-A special edition, **[CKEditor 4 LTS](https://ckeditor.com/ckeditor-4-support/)** ("Long Term Support"), is available under commercial terms (["Extended Support Model"](https://ckeditor.com/ckeditor-4-support/)) for anyone looking to **extend the coverage of security updates and critical bug fixes**.
-
-With CKEditor 4 LTS, security updates and critical bug fixes are guaranteed until December 2026.
+# CKEditor 4 4.22.1+ - Smart WYSIWYG HTML editor [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20CKEditor%204%20on%20GitHub&url=https%3A%2F%2Fgithub.com%2Fckeditor%2Fckeditor4)
 
 ## About this repository
 
-### Master branch = CKEditor 4 LTS
-
-After June 30, 2023 the `master` version of the [LICENSE.md](https://github.com/ckeditor/ckeditor4/blob/master/LICENSE.md) file changed to reflect the license of CKEditor 4 LTS available under the Extended Support Model.
-
-This repository now contains the source code of CKEditor 4 LTS that is protected by copyright law.
-
-### Getting CKEditor 4 (Open Source)
-
-You may continue using CKEditor 4.22.1 and below under the open source license terms. Please note, however, that the open source version no longer comes with any security updates, so your application will be at risk.
-
-In order to download the open source version of CKEditor 4, use ****tags 4.22.1 and below****. CKEditor 4.22.1 was the last version of CKEditor 4 available under the open source license terms.
-
-## Summary of options after the CKEditor 4 End of Life
-
-### Upgrading to CKEditor 5
-
-CKEditor 5 is a great new editor with [lots of exciting features](https://ckeditor.com/docs/ckeditor5/latest/features/index.html).
-
-Before upgrading, please be aware of the following changes:
-
-- CKEditor 5 is a completely new editor. **Upgrading is not as simple as replacing the folder with "ckeditor"** - read more in the [Migration from CKEditor 4](https://ckeditor.com/docs/ckeditor5/latest/updating/ckeditor4/migration-from-ckeditor-4.html) guide.
-- CKEditor 5 is available only under the GPL copyleft license (or under a commercial license).
-- Open source projects with a GPL-incompatible license may apply for a license under the [Free for Open Source](https://ckeditor.com/wysiwyg-editor-open-source/) program.
-
-### Using an outdated, unsupported version
-
-You may continue using CKEditor 4.22.1 (or below). The license terms of the older CKEditor 4 versions have not changed. However, please note that by using software that is no longer maintained, you are introducing a **security risk to your application**.
-
-### Signing an "Extended Support Model" contract
-
-If you are not ready to replace CKEditor 4 in your application yet, you may continue using CKEditor 4 until December 2026.
-CKEditor 4 LTS, available under the "Extended Support Model", will ship all important security updates and critical bug fixes, providing an interrupted editing experience for your end users. Please note that this version of CKEditor 4 is available only under a special agreement and requires a license key.
+### Master branch = CKEditor 4.22.1 + changes and fixes
 
 ## About CKEditor 4
 
@@ -177,10 +130,6 @@ A "release-ready" working copy of your development code will be built in the new
 
 Read more on how to set up the environment and execute tests in the [CKEditor 4 Testing Environment](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_tests.html) guide.
 
-### Reporting issues
-
-Use the [CKEditor 4 GitHub issue page](https://github.com/ckeditor/ckeditor4/issues) to report bugs and feature requests.
-
 ### License
 
 Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
@@ -195,6 +144,3 @@ CKEditor 4 until version 4.22.1 was licensed under the terms of any of the follo
  - GNU Lesser General Public License Version 2.1 or later.
  - Mozilla Public License Version 1.1 or later.
 
-#### CKEditor 4.23.0-lts and above
-
-CKEditor 4 LTS (starting from version 4.23.0-lts) is available under a commercial license only.
