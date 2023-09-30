@@ -1,74 +1,99 @@
 /*
-Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
-For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
 */
-
-body
-{
+body {
 	/* Font */
-	/* Emoji fonts are added to visualise them nicely in Internet Explorer. */
-	font-family: sans-serif, Arial, Verdana, "Trebuchet MS", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-size: 12px;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,roboto,Helvetica Neue,helvetica,arial,sans-serif;
+	font-size: 13px;
 
 	/* Text color */
 	color: #333;
 
-	/* Remove the background color to make it transparent. */
+	/* Remove the background color to make it transparent */
 	background-color: #fff;
 
-	margin: 20px;
+	/*margin: 20px;*/
+
+	scrollbar-color: #dadada white;
+	scrollbar-width: thin;
 }
 
-.cke_editable
-{
-	font-size: 13px;
-	line-height: 1.6;
+body::-webkit-scrollbar-thumb {
+	background: #eee;
+	border: 1px solid #dadada;
+}
 
-	/* Fix for missing scrollbars with RTL texts. (#10488) */
-	word-wrap: break-word;
+body::-webkit-scrollbar {
+	height: 7px;
+	width: 7px;
+}
+
+body.classic-font {
+	font-family: arial, sans-serif;
+}
+
+body:not(.classic-font) {
+	-webkit-font-smoothing: antialiased;
+	color: rgb(52, 52, 52);
+	line-height: 19px;
+}
+
+.cke_editable {
+	font-size: 14px;
+	line-height: 1.3em;
+}
+.cke_widget_drag_handler_container {
+	display:none !important;
+}
+.cke_editable img[data-cke-saved-src] {
+	max-width: 100%;
 }
 
 blockquote
 {
-	font-style: italic;
-	font-family: Georgia, Times, "Times New Roman", serif;
-	padding: 2px 0;
-	border-style: solid;
-	border-color: #ccc;
-	border-width: 0;
+	border-left: 2px solid #BBBBBB;
+	padding-left:15px;
+	margin-left: 20px;
 }
 
-.cke_contents_ltr blockquote
+/*.cke_contents_ltr blockquote
 {
 	padding-left: 20px;
 	padding-right: 8px;
-	border-left-width: 5px;
+	border-left-width: 2px;
 }
 
 .cke_contents_rtl blockquote
 {
 	padding-left: 8px;
 	padding-right: 20px;
-	border-right-width: 5px;
-}
+	border-right-width: 2px;
+}*/
 
 a
 {
-	color: #0782C1;
+	color: #3377C3;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #25BB69;
+	text-decoration: underline
 }
 
 ol,ul,dl
 {
 	/* IE7: reset rtl list margin. (#7334) */
 	*margin-right: 0px;
-	/* Preserved spaces for list items with text direction different than the list. (#6249,#8049)*/
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
 	padding: 0 40px;
 }
 
 h1,h2,h3,h4,h5,h6
 {
 	font-weight: normal;
-	line-height: 1.2;
+	line-height: 1.2em;
 }
 
 hr
@@ -77,38 +102,120 @@ hr
 	border-top: 1px solid #ccc;
 }
 
-img.right
-{
+img.right {
 	border: 1px solid #ccc;
 	float: right;
 	margin-left: 15px;
 	padding: 5px;
 }
 
-img.left
-{
+img.left {
 	border: 1px solid #ccc;
 	float: left;
 	margin-right: 15px;
 	padding: 5px;
 }
 
+img:hover {
+	opacity: .9;
+	filter: alpha(opacity = 90);
+}
+
 pre
 {
 	white-space: pre-wrap; /* CSS 2.1 */
 	word-wrap: break-word; /* IE7 */
-	-moz-tab-size: 4;
-	tab-size: 4;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.ckeditor-handbook-data-item {
+	border-bottom: 1px dashed;
+	display: inline;
+	margin-left: 19px;
+	text-decoration: none;
+	padding-left: 1px;
+	position: relative;
+}
+.ckeditor-handbook-data-item:before {
+	border-bottom: none;
+	content: url("/img/ico-handbook-item.svg");
+	position: absolute;
+	margin-left: -19px;
+	top: 3px;
+	width: 14px;
+}
+
+.ckeditor-contact-item {
+	border-bottom: 1px dashed;
+	display: inline-block;
+	margin-left: 22px;
+	text-decoration: none;
+	padding-left: 1px;
+}
+.dynamic-block-task-desc-style svg {
+	width: 16px;
+	height: 16px;
+	fill: #4b4b4b;
+	cursor: pointer;
+	stroke: #4b4b4b;
+}
+.dynamic-block-task-desc-style .dynamic-block-svg {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	background: url("/img/svg/dynamic-block.svg");
+}
+.dynamic-block-task-desc-style {
+	padding-top: 5px;
+}
+.dynamic-block-task-desc-remove-style {
+	padding-top: 0;
+	line-height: normal;
+}
+.white-content svg {
+	fill: #fff;
+	stroke: #fff
+}
+.white-content {
+	color: #fff;
+}
+.ckeditor-contact-item:before {
+	content: '';
+	position:absolute;
+	margin-left: -20px;
+	height: 16px;
+	width: 16px;
+	background: url(/img/svg/workers.svg);
+	border-bottom: none;
+}
+
+.ckeditor-contact-item.ckeditor-contact-woman:before {
+	background: url(/img/svg/worker-women.svg);
+}
+.ckeditor-contact-item.ckeditor-contact-company:before {
+	background: url(/img/svg/worker-company.svg);
+}
+
+.ckeditor-direct-upload-image { max-width: 500px; }
+
+.cke_editable div svg { display: none; }
+.actions-item-v2-normal-content svg { display: none; }
+.actions-item-v2-normal-meta svg {
+	display: none;
+}
+
+.ckeditor-action-cite {
+	color: #7F7F7F;
 }
 
 .marker
 {
 	background-color: Yellow;
-}
-
-span[lang]
-{
-	font-style: italic;
 }
 
 figure
@@ -125,13 +232,6 @@ figure > figcaption
 {
 	text-align: center;
 	display: block; /* For IE8 */
-}
-
-a > img {
-	padding: 1px;
-	margin: 1px;
-	border: none;
-	outline: 1px solid #0782C1;
 }
 
 /* Widget Styles */
@@ -205,4 +305,52 @@ a > img {
 	max-width: 1920px;
 	max-height: 1080px;
 	margin:0 auto;
+}
+
+.file-loader {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-top: 0.15em solid #f2f2f2;
+	border-right: 0.15em solid #f2f2f2;
+	border-bottom: 0.15em solid #f2f2f2;
+	border-left: .15em solid #b8b8b8;
+	border-radius: 50%;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: load8 1.1s infinite linear;
+	animation: load8 1.1s infinite linear;
+}
+
+@-webkit-keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+table.pf-ckeditor-table {
+	border-collapse: collapse;
+	border: 1px solid #e2e2e2;
+	table-layout: fixed;
+	word-break: break-word;
+}
+table.pf-ckeditor-table td {
+	padding: 3px 10px;
+	border: 1px solid #e2e2e2;
 }

@@ -98,7 +98,7 @@
 							var scrollPos = this.$.scrollTop;
 							this.$.focus();
 							this.$.scrollTop = scrollPos;
-						} else {
+						} else if (this.$.offsetHeight * this.$.offsetWidth > 0) {
 							this.$.focus();
 						}
 					}

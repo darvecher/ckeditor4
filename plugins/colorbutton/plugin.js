@@ -876,7 +876,7 @@ CKEDITOR.config.colorButton_enableMore = true;
  * @cfg {String} [colorButton_colors]
  * @member CKEDITOR.config
  */
-CKEDITOR.config.colorButton_colors = '1ABC9C,2ECC71,3498DB,9B59B6,4E5F70,F1C40F,' +
+CKEDITOR.config.colorButton_colors = '1ABC9C,2ECC71,3498DB,9B59B6,4E5F70,FFFF00,' +
 	'16A085,27AE60,2980B9,8E44AD,2C3E50,F39C12,' +
 	'E67E22,E74C3C,ECF0F1,95A5A6,DDD,FFF,' +
 	'D35400,C0392B,BDC3C7,7F8C8D,999,000';
