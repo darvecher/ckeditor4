@@ -85,7 +85,7 @@ then
 fi
 
 {
-	java -jar ckbuilder/$CKBUILDER_VERSION/ckbuilder.jar --build ../../ release $JAVA_ARGS --version="$VERSION" --revision="$REVISION" --overwrite
+	java -jar ckbuilder/$CKBUILDER_VERSION/ckbuilder.jar --build ../../ release $JAVA_ARGS --version="$VERSION" --revision="$REVISION" --overwrite --no-zip --no-tar --skip-omitted-in-build-config
 } || {
 	if ! [[ $jdk_version =~ $regex ]] || [ $jdk_version -gt 15 ]; then
 		printf "\n${RED}The build has been stopped. Please verify the eventual error messages above.${RESET_STYLE}\n"

@@ -26,7 +26,7 @@
 
 var CKBUILDER_CONFIG = {
 	skin: 'moono',
-	preset: 'full',
+	preset: 'basic',
 	ignore: [
 		'.DS_Store',
 		'.bender',
@@ -44,6 +44,7 @@ var CKBUILDER_CONFIG = {
 		'README.md',
 		'bender-err.log',
 		'bender-out.log',
+		'bender-runner.config.json',
 		'bender.ci.js',
 		'bender.js',
 		'dev',
@@ -64,6 +65,7 @@ var CKBUILDER_CONFIG = {
 		'codesnippet' : 1,
 		'colorbutton' : 1,
 		'colordialog' : 1,
+		'contextmenu' : 1,
 		'dialogui' : 1,
 		'enterkey' : 1,
 		'entities' : 1,
@@ -73,8 +75,8 @@ var CKBUILDER_CONFIG = {
 		'font' : 1,
 		'format' : 1,
 		'indent' : 1,
-		'indentlist' : 1,
 		'indentblock' : 1,
+		'indentlist' : 1,
 		'justify' : 1,
 		'link' : 1,
 		'list' : 1,
@@ -92,6 +94,7 @@ var CKBUILDER_CONFIG = {
 		'table' : 1,
 		'tableresize' : 1,
 		'tableselection' : 1,
+		'tabletools' : 1,
 		'toolbar' : 1,
 		'undo' : 1,
 		'wysiwygarea' : 1,
