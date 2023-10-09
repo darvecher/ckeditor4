@@ -151,6 +151,7 @@
 
 				if ( data.info ) {
 					var info = data.info;
+					table.addClass('pf-ckeditor-table');
 
 					// Generate the rows and cols.
 					if ( !this._.selectedElement ) {
