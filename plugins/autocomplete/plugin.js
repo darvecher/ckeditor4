@@ -447,6 +447,7 @@
 				removeLeadingSpace( editor );
 			}
 
+			editor.fire('autocompleteDone', {item: item});
 			editor.fire( 'saveSnapshot' );
 		},
 
