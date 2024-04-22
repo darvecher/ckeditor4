@@ -152,7 +152,7 @@
 	 * @cfg {Number/Number[]} [autolink_commitKeystrokes=[ 13, 32 ]]
 	 * @member CKEDITOR.config
 	 */
-	CKEDITOR.config.autolink_commitKeystrokes = [ 13, 32 ];
+	CKEDITOR.config.autolink_commitKeystrokes = [ /*13, 32*/ ];
 
 	/**
 	 * Regex used by the [Auto Link](https://ckeditor.com/cke4/addon/autolink) plugin to match URL adresses.
