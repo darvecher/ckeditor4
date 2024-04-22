@@ -56,6 +56,7 @@ var CKBUILDER_CONFIG = {
 		'tests'
 	],
 	plugins : {
+		'autolink' : 1,
 		'autocomplete' : 1,
 		'autogrow' : 1,
 		'basicstyles' : 1,
@@ -108,6 +109,7 @@ var CKBUILDER_CONFIG = {
 		'pl' : 1,
 		'de' : 1,
 		'es' : 1,
+		'cs' : 1,
 		'az' : 1,
 		'pt' : 1,
 		'ro' : 1,

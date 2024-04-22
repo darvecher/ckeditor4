@@ -157,6 +157,7 @@
 
 			// Display notification for unsupported file types (#5095).
 			CKEDITOR.plugins.clipboard.addFileMatcher( editor, testImageBase64Support );
+			editor.on( 'destroy', function() { editor.plugins.clipboard._supportedFileMatchers = []});
 			editor.on( 'paste', function( evt ) {
 				if ( !isFilePasteSupported ) {
 					return;

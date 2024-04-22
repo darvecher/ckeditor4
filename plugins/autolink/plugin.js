@@ -33,8 +33,15 @@
 				}
 
 				if ( matchLink( data ) ) {
-					evt.data.dataValue = getHtmlToInsert( data );
-					evt.data.type = 'html';
+					var selectedText = editor.getSelection().getSelectedText();
+
+					if ( selectedText ) {
+						evt.data.dataValue = getHtmlToInsert(data, selectedText);
+						evt.data.type = 'html';
+					} else {
+						/*evt.data.dataValue = getHtmlToInsert( data );
+						evt.data.type = 'html';*/
+					}
 				}
 			} );
 
@@ -73,17 +80,17 @@
 				}
 			}
 
-			function getHtmlToInsert( text ) {
+			function getHtmlToInsert( linkValue, textValue ) {
 				// URL will be encoded later on with link.setAttribute method. Avoid
 				// double encoding of special characters (#4858).
-				text = CKEDITOR.tools.htmlDecodeAttr( text );
+				linkValue = CKEDITOR.tools.htmlDecodeAttr( linkValue );
 
 				var link = new CKEDITOR.dom.element( 'a' ),
-					value = text.replace( /"/g, '%22' );
+					value = linkValue.replace( /"/g, '%22' );
 
 				value = value.match( editor.config.autolink_urlRegex ) ? value : 'mailto:' + value;
 
-				link.setText( text );
+				link.setText( textValue ? textValue : linkValue );
 				link.setAttribute( 'href', value );
 
 				// (#1824)
