@@ -1,7 +1,7 @@
 'use strict';
 
 ( function() {
-	CKEDITOR.dialog.add('youtube', function (instance) {
+	CKEDITOR.dialog.add('youtube', function (editor) {
 		var video,
 			disabled = editor.config.youtube_disabled_fields || [];
 

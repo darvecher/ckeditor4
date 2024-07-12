@@ -19,7 +19,7 @@
 		return;
 	}
 
-	CKEDITOR.config.versionCheck = versionInfo.current.isLts ? false : true;
+	CKEDITOR.config.versionCheck = false;
 
 	CKEDITOR.on( 'instanceReady', function( evt ) {
 		var editor = evt.editor;
